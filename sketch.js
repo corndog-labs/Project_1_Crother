@@ -47,7 +47,7 @@ var lineHeight = 24;
 
 // Center drawing, drawFunction will be one for default
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(800, 800);
 
   // Center our drawing objects
   imageMode(CENTER);
@@ -55,7 +55,7 @@ function setup() {
   textSize(24);
 
   // set to one for startup
-  drawFunction = drawRedRoom;
+  drawFunction = drawEntrance;
 }
 
 // Very simple, sets the background color and calls your state machine function
@@ -74,11 +74,11 @@ function draw() {
 drawEntrance = function() {
    //image(images[0],width/2, height/2);
 
-   fill(75,0,130);
-   text("Statue Garden", width/2, height - gTextOffset);
+   fill(255, 255, 255);
+   text("Statue Garden", width/2, height/4);
 
-   fill(75,0,130);
-   text("Enter", width/2, height - gTextOffset);
+   fill(255, 255, 255);
+   text("To enter click right arrow", width/2, height/3);
 }
 
 //-- drawTwo() will draw the image at index 1 from the array
@@ -115,8 +115,11 @@ drawRoomFour = function() {
 drawEnding = function() {
    //(images[3],width/2, height/2);
 
-   fill(30,144,255);
-   text("Exit", width/2, height - gTextOffset);
+   fill(255, 255, 255);
+   text("Exit", width/2, height/4);
+
+   fill(255, 255, 255 );
+   text("Thanks for visiting", width/2, height/4);
 }
 
 //-- Will draw the current instuctions on the screen
@@ -133,12 +136,11 @@ function keyPressed() {
   //print(key);
   print(keyCode);
 
-  // Enter [k] 
+  // Entrance [] 
   if( drawFunction === drawEntrance ) {
-    if( keyCode === LEFT_ARROW ) {
+    if( keyCode === RIGHT_ARROW ) {
         drawFunction = drawRoomOne;
     }
-    
   }
 
   // RoomOne [1]
@@ -152,32 +154,27 @@ function keyPressed() {
     else if( key === '3' ) {
       drawFunction = drawRoomThree;
     }
-  
   }
 
   // RoomTwo [2]
   else if( drawFunction === drawRoomTwo ) {
-    if( key === 'b' ) {
+    if( key === '3' ) {
       drawFunction = drawRoomThree;
     }
-    if( key === 'b' ) {
-      drawFunction = drawRoomThree;
+    if( key === '4' ) {
+      drawFunction = drawRoomFour;
     }
 
   }
 
   // RoomThree [3]
   else if( drawFunction === drawRoomThree ) {
-
     if( key === '4') {
       drawFunction = drawRoomFour;
     }
-
     if( key === '2' ) {
       drawFunction = drawRoomTwo;
     }
-    
-    
   }
   // RoomFour [4]
   else if( drawFunction === drawRoomFour ) {
@@ -185,12 +182,9 @@ function keyPressed() {
     if( key === '4') {
       drawFunction = drawEnding;
     }
-
     if( key === '1' ) {
       drawFunction = drawRoomOne;
     }
-    
-    
   }
   // Exit [E]
   else if( drawFunction === drawEnding ) {
