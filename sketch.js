@@ -42,6 +42,10 @@ statueAssests[2] = loadImage('assets/MiloHell.png');
 statueAssests[3] = loadImage('assets/k1archaic.png');
 statueAssests[4] = loadImage('assets/k2archaic.png');
 statueAssests[5] = loadImage('assets/davidClass.png');
+statueAssests[6] = loadImage('assets/davidsmall.png');
+statueAssests[7] = loadImage('assets/milosmall.png');
+statueAssests[8] = loadImage('assets/nikesmall.png');
+
 
 }
 
@@ -70,13 +74,19 @@ drawEntrance = function() {
    fill(186, 85, 211);
    textSize(50);
    textFont('Georgia');
-   text("Greek Sculpture Garden", width/2, height/4);
+   text("Greek Sculpture Garden", width/2, height/8);
    
 
    fill(255, 255, 255);
    textSize(30);
    textFont('Helvetica');
-   text("To enter click right arrow", width/2, height/3);
+   text("To enter click right arrow", width/2, height/5);
+
+   // image(statueAssests[6], 470, 580); //winged nike
+   image(statueAssests[7], 170, 580); //milo
+   image(statueAssests[6], 450, 580); //david
+   image(statueAssests[8], 730, 600); //nike
+
 
 }
 
