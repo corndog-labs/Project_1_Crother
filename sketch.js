@@ -16,16 +16,16 @@ var startY;
 var lineHeight = 24;
 
 //Nav box variables 
-var navX = 780; 
-var navY = 520;
-var navH = 60;
-var navW = 60;
+var navX = 1900; 
+var navY = 800;
+var navH = 80;
+var navW = 80;
 
-var navYb = 600; 
-var navYc = 680; 
+var navYb = 900; 
+var navYc = 1000; 
 
 //Nav text variables 
-var navNumx = 810;
+var navNumx = 1900;
 var navNumy = 557;
 var navNumb = 639;
 var navNumc = 717;
@@ -55,7 +55,7 @@ statueAssests[13] = loadImage('assets/lastpage5.png');
 
 function setup() {
 
-  createCanvas(900, 800);
+  createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
   textAlign(CENTER);
   textSize(24);
@@ -93,14 +93,14 @@ drawEntrance = function() {
 drawRoomOne = function() {
 
    fill(130, 255, 160);
-   textSize(40);
+   textSize(50);
    textFont('Georgia');
    text("The Archaic period", width/1.8, height/8);
 
    fill(255, 255, 255);
-   textSize(24);
+   textSize(30);
    textFont('Helvetica');
-   text("In the archaic period (800-500 BC), the Greeks started to produce life-size statues inspired by Egyptian sculptures. They were made of stone and rigid in posture. The statues were famous for the Archaic smile seen here in the statues to the left.", width/3, 130, 410, 550);
+   text("In the archaic period (800-500 BC), the Greeks started to produce life-size statues inspired by Egyptian sculptures. They were made of stone and rigid in posture. The statues were famous for the Archaic smile seen here in the statues to the left.", width/2, 350, 400, 500);
 
    //nav boxes 
    fill(255, 255, 255);
@@ -132,7 +132,7 @@ drawRoomOne = function() {
 drawRoomTwo = function() {
 
    fill(255, 20, 147);
-   textSize(45);
+   textSize(50);
    textFont('Georgia');
    text("The Classical period", width/1.5, height/8 - gTextOffset);
 
@@ -166,7 +166,7 @@ drawRoomTwo = function() {
 drawRoomThree = function() {
 
    fill(30, 144, 255);
-   textSize(40);
+   textSize(50);
    textFont('Georgia');
    text("The Hellenistic period", width/1.4, height/8 - gTextOffset);
 
@@ -201,7 +201,7 @@ drawRoomThree = function() {
 drawRoomFour = function() {
 
    fill(30, 144, 255);
-   textSize(40);
+   textSize(50);
    textFont('Georgia');
    text("The Hellenistic period", width/3, height/8);
 
@@ -234,7 +234,7 @@ drawRoomFour = function() {
 drawEnding = function() {
 
    fill(255, 255, 255 );
-   textSize(40);
+   textSize(50);
    textFont('Georgia');
    text("Thanks for visiting", width/2, height/3);
 
