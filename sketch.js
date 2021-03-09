@@ -16,7 +16,7 @@ var startY;
 var lineHeight = 24;
 
 //Nav box variables 
-var navX = 1900; 
+var navX = 1600; 
 var navY = 800;
 var navH = 80;
 var navW = 80;
@@ -25,8 +25,8 @@ var navYb = 900;
 var navYc = 1000; 
 
 //Nav text variables 
-var navNumx = 1900;
-var navNumy = 557;
+var navNumx = 1650;
+var navNumy = 800;
 var navNumb = 639;
 var navNumc = 717;
 
@@ -115,7 +115,7 @@ drawRoomOne = function() {
    rect(navX, navYc, navH, navW, 10);
 
    //text for nav 
-   fill (0, 0, 0);
+   fill (255, 255, 255);
    text("2", navNumx, navNumy);
 
    fill (0, 0, 0);
