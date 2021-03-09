@@ -25,10 +25,10 @@ var navYb = 900;
 var navYc = 1000; 
 
 //Nav text variables 
-var navNumx = 1650;
-var navNumy = 800;
-var navNumb = 639;
-var navNumc = 717;
+var navNumx = 1640;
+var navNumy = 840;
+var navNumb = 940;
+var navNumc = 1040;
 
 var statueAssests = [];
 
@@ -84,9 +84,9 @@ drawEntrance = function() {
    textFont('Helvetica');
    text("To enter click right arrow", width/2, height/4);
 
-   image(statueAssests[6], 420, 580); //david
-   image(statueAssests[7], 150, 580); //milo
-   image(statueAssests[8], 710, 590); //nike
+   image(statueAssests[6], 1030, 580); //david
+   image(statueAssests[7], 760, 580); //milo
+   image(statueAssests[8], 1330, 590); //nike
 
 }
 
@@ -115,7 +115,7 @@ drawRoomOne = function() {
    rect(navX, navYc, navH, navW, 10);
 
    //text for nav 
-   fill (255, 255, 255);
+   fill (0, 0, 0);
    text("2", navNumx, navNumy);
 
    fill (0, 0, 0);
@@ -124,8 +124,8 @@ drawRoomOne = function() {
    fill (0, 0, 0);
    text("4", navNumx, navNumc);
 
-   image(statueAssests[3], 150, 400); //statue
-   image(statueAssests[4], 470, 580); //bust
+   image(statueAssests[3], 350, 700); //statue
+   image(statueAssests[4], 770, 880); //bust
 
 }
 
@@ -134,12 +134,12 @@ drawRoomTwo = function() {
    fill(255, 20, 147);
    textSize(50);
    textFont('Georgia');
-   text("The Classical period", width/1.5, height/8 - gTextOffset);
+   text("The Classical period", width/2, height/8 - gTextOffset);
 
    fill(255, 255, 255);
    textSize(25);
    textFont('Helvetica');
-   text("In the Classical period (500-330 BC) Athens was at the height of culture and art. The statues in this time were becoming more lifelike and more attention was given to how the body moves. The statue to the left is called the Discus Thrower, it is famous for its original bronze casting. This stone version was recreated by the Romans. The figure is positioned right in the moment of throwing the discus. Classically, the figure has an emotionless face.", width/2.2, 150, 400, 500);
+   text("In the Classical period (500-330 BC) Athens was at the height of culture and art. The statues in this time were becoming more lifelike and more attention was given to how the body moves. The statue to the left is called the Discus Thrower, it is famous for its original bronze casting. This stone version was recreated by the Romans. The figure is positioned right in the moment of throwing the discus. Classically, the figure has an emotionless face.", width/2.2, 350, 400, 500);
 
    fill(255, 255, 255);
    rect(navX, navY, navH, navW, 10);
@@ -159,7 +159,7 @@ drawRoomTwo = function() {
    textFont('Georgia');
    text("4", navNumx, navNumb);
 
-   image(statueAssests[5], 200, 400);
+   image(statueAssests[5], 600, 700);
 
 }
 
@@ -168,12 +168,12 @@ drawRoomThree = function() {
    fill(30, 144, 255);
    textSize(50);
    textFont('Georgia');
-   text("The Hellenistic period", width/1.4, height/8 - gTextOffset);
+   text("The Hellenistic period", width/2, height/8 - gTextOffset);
 
    fill(255, 255, 255);
    textSize(28);
    textFont('Helvetica');
-   text("The statues in the Hellenistic period showed more realistic representations of the human body, including the injuries and unidealized bodies. The Venus De Milo (pictured below) is known for its missing limbs and mysterious absence of attributes. It is thought to depict Aphrodite, the Greek goddess of love.", width/2, 150, 400, 700);
+   text("The statues in the Hellenistic period showed more realistic representations of the human body, including the injuries and unidealized bodies. The Venus De Milo (pictured below) is known for its missing limbs and mysterious absence of attributes. It is thought to depict Aphrodite, the Greek goddess of love.", width/2, 370, 400, 700);
 
    fill(255, 255, 255);
    rect(navX, navY, navH, navW, 10);
@@ -193,8 +193,8 @@ drawRoomThree = function() {
    textFont('Georgia');
    text("2", navNumx, navNumb);
 
-   image(statueAssests[1], 160, 350); // not venus
-   image(statueAssests[2], 370, 540); //venus
+   image(statueAssests[1], 460, 650); // not venus
+   image(statueAssests[2], 770, 740); //venus
 
 }
 
@@ -208,7 +208,7 @@ drawRoomFour = function() {
    fill(255, 255, 255);
    textSize(28);
    textFont('Helvetica');
-   text("This is the Winged Victory of Samothrace one of the most celebrated sculptures of the Hellenistic period. Also known as the statue of Nike it is famous for its being an original piece and not a Roman copy. The sculpture gives a sense of motion and stillness at once and it is made to look like the winges are fluttering in the wind. Although pieces of the sculpture, like the left hand, have been found, the head has never been discovered. ", width/9, 150, 400, 700);
+   text("This is the Winged Victory of Samothrace one of the most celebrated sculptures of the Hellenistic period. Also known as the statue of Nike it is famous for its being an original piece and not a Roman copy. The sculpture gives a sense of motion and stillness at once and it is made to look like the winges are fluttering in the wind. Although pieces of the sculpture, like the left hand, have been found, the head has never been discovered. ", width/9, 350, 400, 700);
 
    fill(255, 255, 255);2
    rect(navX, navY, navH, navW, 10);
@@ -228,7 +228,7 @@ drawRoomFour = function() {
    textFont('Georgia');
    text("1", navNumx, navNumb);
 
-   image(statueAssests[0], 670, 430);
+   image(statueAssests[0], 1070, 730);
 }
 
 drawEnding = function() {
@@ -248,11 +248,11 @@ drawEnding = function() {
    fill (0, 0, 0);
    text("1", navNumx, navNumy);
 
-   image(statueAssests[9], 130, 700);
-   image(statueAssests[10], 300, 700);
-   image(statueAssests[11], 440, 700);
-   image(statueAssests[12], 580, 700);
-   image(statueAssests[13], 740, 700);
+   image(statueAssests[9], 750, 900);
+   image(statueAssests[10], 940, 900);
+   image(statueAssests[11], 1050, 900);
+   image(statueAssests[12], 1200, 900);
+   image(statueAssests[13], 1370, 900);
 }
 
 
